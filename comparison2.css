@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat+Subrayada:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, Arial;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  margin: 0 7% 1rem;
+  padding: 10px 0;
+  background-color: black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo h1 {
+  font-family: Montserrat Subrayada, Roboto ;
+  color: whitesmoke;
+}
+
+header .container .logo h1:hover {
+  color: rgba(255, 0, 0, 0.534);
+}
+
+header .container nav a {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+header .container nav a:hover {
+  border-bottom: 5px solid rgb(170, 0, 0);
+}
+
+header .container .btn {
+  color: red;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  overflow: hidden;
+  background-color: black;
+  z-index: 1000;
+  margin-bottom: 1rem;
+}
+
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: rgba(255, 0, 0, 0.226);;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  margin: 0 50px;
+}
+
+main .image-row,
+main .specs-row .overview,
+main .specs-row .engPrfmnc,
+main .specs-row .dimension,
+main .specs-row .fuelIgntn,
+main .specs-row .tyreSuspnsn,
+main .specs-row .gearTrnsmssn,
+main .specs-row .sftyScrty,
+main .specs-row .brkType {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 300px;
+  position: relative;
+}
+
+main .image-row .bike {
+  border-right: 1px solid rgba(255, 0, 0, 0.226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .image-row .bike .image {
+  width: 500px;
+}
+
+main .image-row .bike .image img {
+  width: 100%;
+  border-radius: 500px;
+  border: 10px dashed rgba(255, 0, 0, 0.459);
+  box-shadow: 0 0 10px white;
+}
+
+main .image-row .bike .name-price {
+  color: whitesmoke;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+main .image-row .bike .name-price p {
+  font-size: 20px;
+}
+
+main .image-row .seperator {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  left: 48.9%;
+  top: 40%;
+  background-color: rgb(78, 1, 1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+main .image-row .dummy {
+  padding: 50px 30px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+main .image-row .dummy .dmmySprtr {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  left: -5%;
+  top: 39%;
+  background-color: #1b1b1b;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+main .image-row .dummy .imgDmmy {
+  background-color: #1b1b1b;
+  height: 250px;
+  border-radius: 125px;
+}
+
+main .image-row .dummy .nameDmmy {
+  background-color: #1b1b1b;
+  height: 50px;
+  margin-top: 30px;
+}
+
+/*
+main .image-row .dummy:hover main .image-row .dummy .imgDmmy {
+  background-color: #3d3d3d;
+}
+*/
+
+main .specs-row {
+  margin-top: 2px;
+  border-radius: 10px;
+  border-top: 2px solid red;
+}
+
+main .specs-row .dimension,
+main .specs-row .fuelIgntn,
+main .specs-row .tyreSuspnsn,
+main .specs-row .gearTrnsmssn,
+main .specs-row .brkType {
+  box-shadow: 0 -3px 5px rgba(190, 190, 190, 0.3);
+  margin-top: 3px;
+}
+
+
+main .specs-row .overview {
+  box-shadow: 0 -7px 10px rgba(190, 190, 190, 0.2);
+  border-radius: 10px;
+}
+
+main .specs-row .engPrfmnc,
+main .specs-row .sftyScrty {
+  border-radius: 10px;
+  border-radius: 10px;
+  border-top: 2px solid red;
+  margin-top: 20px;
+  box-shadow: 0 -7px 10px rgba(190, 190, 190, 0.2);
+}
+
+
+main .specs-row .overview .one,
+main .specs-row .engPrfmnc .one,
+main .specs-row .dimension .one,
+main .specs-row .fuelIgntn .one,
+main .specs-row .tyreSuspnsn .one,
+main .specs-row .gearTrnsmssn .one,
+main .specs-row .sftyScrty .one,
+main .specs-row .brkType .one {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+}
+
+main .specs-row .overview .one h3,
+main .specs-row .engPrfmnc .one h4,
+main .specs-row .dimension .one h3,
+main .specs-row .fuelIgntn .one h4,
+main .specs-row .tyreSuspnsn .one h4,
+main .specs-row .gearTrnsmssn .one h4,
+main .specs-row .sftyScrty .one h4,
+main .specs-row .brkType .one h3 {
+  color: antiquewhite;
+  font-style: italic;
+  margin-top: 13px;
+  text-align: center;
+}
+
+main .specs-row .overview .one .ttl p,
+main .specs-row .engPrfmnc .one .ttl p,
+main .specs-row .dimension .one .ttl p,
+main .specs-row .fuelIgntn .one .ttl p,
+main .specs-row .tyreSuspnsn .one .ttl p,
+main .specs-row .gearTrnsmssn .one .ttl p,
+main .specs-row .sftyScrty .one .ttl p,
+main .specs-row .brkType .one .ttl p {
+  color: white;
+  font: 14px Roboto, Arial;
+  font-weight: bold;
+  padding: 20px 5px;
+  border-right: 1px solid rgba(255, 0, 0, 0.226);
+  margin-bottom: 2px;
+  background-color: #1b1b1b;
+  text-align: center;
+}
+
+main .specs-row .overview .two p,
+main .specs-row .engPrfmnc .two p,
+main .specs-row .dimension .two p,
+main .specs-row .fuelIgntn .two p,
+main .specs-row .tyreSuspnsn .two p,
+main .specs-row .gearTrnsmssn .two p,
+main .specs-row .sftyScrty .two p,
+main .specs-row .brkType .two p,
+main .specs-row .overview .three p,
+main .specs-row .engPrfmnc .three p,
+main .specs-row .dimension .three p,
+main .specs-row .fuelIgntn .three p,
+main .specs-row .tyreSuspnsn .three p,
+main .specs-row .gearTrnsmssn .three p,
+main .specs-row .sftyScrty .three p,
+main .specs-row .brkType .three p {
+  color: rgba(245, 245, 245, 0.692);
+  font: 15px Arimo, Arial;
+  padding: 20px 5px;
+  border-right: 1px solid rgba(255, 0, 0, 0.226);
+  margin-bottom: 2px;
+  background-color: #1b1b1b;
+  text-align: center;
+}
+
+main .specs-row .sftyScrty .column .bx-check {
+  color: green;
+}
+
+main .specs-row .sftyScrty .column .bx-x {
+  color: red;
+}
